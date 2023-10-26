@@ -2,7 +2,7 @@ import { createRollupConfig } from './rollup/createRollupConfig';
 import pkg from './package.json';
 
 const name = 'index';
-const umdName = 'AntdFormDevTools';
+const umdName = 'RcFormDevTools';
 const options = [
   {
     name,

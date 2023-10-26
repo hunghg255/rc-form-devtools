@@ -1,0 +1,114 @@
+{
+  "name": "rc-form-devtools",
+  "version": "1.0.7",
+  "description": "RC Form dev tool to help debugging forms",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.development.js",
+  "module": "dist/index.esm.js",
+  "unpkg": "dist/index.umd.development.js",
+  "jsdelivr": "dist/index.umd.development.js",
+  "jsnext:main": "dist/index.esm.js",
+  "source": "src/index.tsx",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "yarn clean",
+    "build": "node rollup/writeCjsEntryFile.js && rollup -c --bundleConfigAsCjs",
+    "lint": "eslint '**/*.{js,ts,tsx}'",
+    "lint:fix": "yarn lint -- --fix",
+    "lint:types": "tsc --noEmit",
+    "format": "prettier --write \"**/*.{js,ts,tsx,md,json}\""
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "devtool",
+    "devtools",
+    "form",
+    "forms",
+    "form-validation",
+    "validation",
+    "antd",
+    "ant-design",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hunghg255/rc-form-devtools.git"
+  },
+  "author": "hunghg255",
+  "bugs": {
+    "url": "https://github.com/hunghg255/rc-form-devtools/issues"
+  },
+  "homepage": "https://github.com/hunghg255/rc-form-devtools",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@types/react": "^18.2.14",
+    "@types/uuid": "^9.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "antd": "^5.7.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^5.0.0-alpha.2",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^3.0.0",
+    "rc-field-form": "^1.40.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.26.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "antd": "^5",
+    "rc-field-form": "^1",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "react-hooks",
+      "prettier"
+    ],
+    "extends": [
+      "plugin:react/recommended",
+      "plugin:react/jsx-runtime",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended",
+      "prettier"
+    ],
+    "rules": {
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "error",
+      "no-console": "error"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "dist",
+    "!.*.js"
+  ]
+}

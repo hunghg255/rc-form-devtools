@@ -1,7 +1,21 @@
-# DevTools for RC Forms
+<p align="center">
+<a href="https://www.npmjs.com/package/rc-form-devtools" target="_blank" rel="noopener noreferrer">
+<img src="https://api.iconify.design/arcticons:google-webview-devtools.svg?color=%23cefdb4" alt="logo" width='100'/></a>
+</p>
 
-A Powerfull DevTools to help debug RC Forms.
+<p align="center">
+  A powerfull devtools for <a href="https://www.npmjs.com/package/rc-field-form">rc-field-form</a>
+</p>
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/rc-form-devtools" target="_blank" rel="noopener noreferrer"><img src="https://badge.fury.io/js/csvs-parsers.svg" alt="NPM Version" /></a>
+  <a href="https://www.npmjs.com/package/rc-form-devtools" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/npm/dt/csvs-parsers.svg?logo=npm" alt="NPM Downloads" /></a>
+  <a href="https://bundlephobia.com/result?p=rc-form-devtools" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/bundlephobia/minzip/rc-form-devtools" alt="Minizip" /></a>
+  <a href="https://github.com/hunghg255/rc-form-devtools/graphs/contributors" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg" alt="Contributors" /></a>
+  <a href="https://github.com/hunghg255/rc-form-devtools/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/github/license/hunghg255/rc-form-devtools" alt="License" /></a>
+</p>
+
+## Preview
 ![](example/screen.png)
 
 ## Install
